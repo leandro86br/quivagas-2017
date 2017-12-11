@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /wusage
+Disallow: /cgi-bin/
+
+Sitemap: http://www.quivagas.com.br/sitemap.xml

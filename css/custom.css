@@ -1,0 +1,93 @@
+/*
+    Author Leandro.Zambelli@yahoo.com
+    v2.1
+    2017
+ */
+
+/* =FONT
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400|Raleway:300,600);
+
+
+body { font-family: 'roboto', sans-serif; overflow-x: hidden !important }
+section { padding: 100px 0 }
+a { transition: all ease 0.25s }
+
+
+/* =BOOTSTRAP RESET
+ */
+
+ul { padding-left: 20px }
+
+.btn { border-radius: 50px; padding:15px 50px 16px 50px }
+.btn-sm, .btn-group-sm > .btn { padding: 9px 50px 10px 50px; font-size: 0.875rem; border-radius: 50px }
+
+[class*="btn-outline"] { border:2px solid }
+
+
+/* =CLASSES
+ */
+
+.bg-overlay-header { background: linear-gradient(rgba(0,0,0,0.1) 10%,rgba(0,20,30,0.9) 60%) }
+.bg-overlay-content { background: rgba(0,20,30,0.7) }
+
+.bg-overlay-content a[href^="tel:"] { color: #fff }
+
+.bg-header { background:url(../img/bg/bg-header.jpg) no-repeat center; background-size: cover; background-attachment: fixed }
+.bg-paralax { background: url(../img/bg/bg-paralax.jpg) no-repeat center; background-size: cover; background-attachment: fixed }
+
+@media (max-width:767px){
+    .bg-header { background-attachment: scroll }
+    .bg-paralax { background-attachment: scroll }
+}
+
+.bg-light-gray { background-color: #eee }
+
+.line { height: 1px; width:70px; margin:10px auto 85px auto }
+.line-primary { background:#007BFF }
+.line-light { background:#eee }
+
+.no-padding { padding: 0 }
+.padding-content { padding: 125px 0 }
+
+.icon-lg { margin-top:40px 0; font-size:50px }
+
+.services li { padding: 5px 0; list-style:disc; font-size: 1.2em; font-weight: 300 }
+.text-shadow { text-shadow: 0 0 20px #000 }
+
+.space { margin-top: 150px }
+
+.relative { position: relative }
+
+.svg-top { top: -2px; left: 0; width: 100% }
+.svg-bottom { bottom: -7px; left: 0; width: 100% }
+
+
+/* =TYPOGRAPHY
+ */
+
+h1, h2, h3 { font-family: 'Raleway', sans-serif}
+
+h1 { font-size: 2.9em; }
+h2 { font-size: 2.4em; }
+h3 { font-size: 1.7em; font-weight: 600 }
+
+p{ margin-bottom:1.6em; font-size:1.3em; line-height: 1.6em; font-weight: 300 }
+
+
+/* =HEADER E NAV
+ */
+
+.intro { padding: 200px 0 210px 0 }
+
+nav a { font-family: 'Arial', sans-serif }
+.navbar-nav { font-family: 'raleway', sans-serif; font-size: 0.85em }
+.nav-link:hover, .nav-link:active, .nav-link:focus { color: #007BFF!important }
+
+
+/* =FOOTER
+ */
+
+footer { padding:75px 0 }
+footer p{ font-size: 0.85em }
