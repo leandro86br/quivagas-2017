@@ -5,8 +5,6 @@
  */
 
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,400|Raleway:300,600);
-
 body { font-family: 'roboto', sans-serif; overflow-x: hidden !important }
 
 a { transition: all ease 0.25s }
