@@ -4,7 +4,6 @@
     2017
  */
 
-
 @import url(http://fonts.googleapis.com/css?family=Roboto:300|Raleway:300,600);
 
 body { font-family: 'roboto', sans-serif; overflow-x: hidden !important }
@@ -19,8 +18,14 @@ a[href^="tel:"]:hover, a[href^="mailto:"]:hover { color: #47A3DA}
  */
 
 nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
-.nav-link { font-size: 0.85em; color: #fff!important }
-.nav-link:hover, .nav-link:active, .nav-link:focus { color: #47A3DA!important }
+
+.navbar-dark .navbar-nav .nav-link { color: #fff; font-size: 0.85em }
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus { color: #47A3DA; }
+.navbar-dark .navbar-toggler { background: #000; border-color: #000 }
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 
 @media (max-width:767px){
     .nav-item:first-child { margin-top: 10px}
@@ -34,20 +39,13 @@ nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
 [class*="btn-outline"] { border:2px solid }
 
 
-
 /* =CLASSES
  */
 
-.intro { padding: 340px 0; height: 85vh; }
-
-@media (max-width:767px){
-    .intro { padding: 250px 0 }
-}
-
 .text-light-blue { color: #47A3DA }
-.bg-light-gray { background-color: #ECF0F1 }
-.bg-light-blue { background: #47A3DA }
+.text-shadow { text-shadow: 0 0 10px #000 }
 
+.bg-light-blue { background: #47A3DA }
 .bg-black { background-color: #000}
 .bg-nav-overlay { background: rgba(0,0,0,0.7) }
 .bg-overlay { background-color: rgba(0,0,0,0.4) }
@@ -57,20 +55,27 @@ nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
 .bg-contact { background: url(../img/bg/bg-contact.jpg) no-repeat center; background-size: cover; background-attachment: fixed }
 
 @media (max-width:767px){
+    .bg-nav-overlay { background: rgba(0,0,0,0.8) }
     .bg-header { background-position: left; background-attachment: scroll }
     .bg-contact { background-attachment: scroll }
 }
 
-.line { height: 1px; width: 70px; margin:10px auto 85px auto }
+.line { height: 1px; width: 70px; margin:10px auto 83px auto }
 
+.padding-intro { padding-top: 340px; padding-bottom: 340px; height: auto; }
 .padding-content { padding-top: 125px; padding-bottom: 125px; }
-.negative-margin { top: -40px }
 
-.icon-lg { margin-top:40px 0; font-size:50px }
+@media (max-width:767px){
+    .padding-intro { padding: 250px 0 }
+}
 
-.text-shadow { text-shadow: 0 0 10px #000 }
+@media (max-width:575px){
+    .padding-intro { padding-top: 160px; padding-bottom: 160px; }
+}
 
-.space { margin-top: 150px }
+.icon-lg { font-size:50px }
+
+.space { margin-top: 125px }
 
 .relative { position: relative }
 
@@ -86,9 +91,11 @@ h1, h2, h3 { font-family: 'Raleway', sans-serif; color: #41484C }
 h1 { font-size: 2.9em; }
 h2 { font-size: 2.4em; }
 h3 { font-size: 1.7em; font-weight: 600 }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.3em; }
+h6 { font-size: 1.1em; font-weight: 600 }
 
-p{ margin-bottom:1.6em; font-size:1.3em; line-height: 1.6em; font-weight: 300; color: #41484C }
-
+p { margin-top: 0; margin-bottom: 1.6em; font-size: 1.3em; line-height: 1.6em; font-weight: 300; color: #41484C }
 
 
 /* =FOOTER
