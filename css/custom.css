@@ -49,6 +49,7 @@ nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
 /* =CLASSES
  */
 
+
 .text-light-blue { color: #47A3DA }
 .text-shadow { text-shadow: 0 0 10px #000 }
 
@@ -59,7 +60,7 @@ nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
 .bg-overlay { background-color: rgba(0,0,0,0.4); }
 .bg-mask { background-image: url(../img/bg/mask.png); }
 .bg-header { background:url(../img/bg/bg-header.jpg) no-repeat top center; background-size: cover; background-attachment: fixed; }
-.bg-contact { background: url(../img/bg/bg-contact.jpg) no-repeat center; background-size: cover; background-attachment: fixed }
+.bg-contact { background: url(../img/bg/bg-contact.jpg) no-repeat center; background-size: cover; background-attachment: fixed; }
 
 @media (max-width:767px){
     .bg-nav-overlay { background: rgba(0,0,0,0.8) }
@@ -69,20 +70,16 @@ nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
 
 .line { height: 1px; width: 70px; margin:10px auto 83px auto } /* linha usada embaixo dos titulos */
 
-.padding-banner { padding-top: 390px; padding-bottom: 260px; } /* padding usado no header para centrarlizar o conteudo */
+.padding-banner { padding-top: 290px; padding-bottom: 250px; } /* padding usado no header para centrarlizar o conteudo */
 .padding-content { padding-top: 125px; padding-bottom: 125px; } /* usado para dar espaco ao conteudo */
 
-
-@media (max-width:991px){
-    .padding-banner { padding-top: 300px; padding-bottom: 240px; }
-}
 
 @media (max-width:767px){
     .padding-banner { padding-top: 240px; padding-bottom: 200px }
 }
 
 @media (max-width:575px){
-    .padding-banner { padding-top: 160px; padding-bottom: 160px; }
+    .padding-banner { padding-top: 160px; padding-bottom: 120px; }
 }
 
 
@@ -91,6 +88,7 @@ nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
 .space { margin-top: 125px } /* cria espaco entre itens */
 
 .relative { position: relative }
+.absolute { position: absolute }
 
 /* svg usados para decoracao das bordas das secoes contato e footer */
 .svg-top { top: -2px; left: 0; width: 100% }
@@ -117,8 +115,10 @@ a[href^="tel:"], a[href^="mailto:"] { color: #fff }
 a[href^="tel:"]:hover, a[href^="mailto:"]:hover { color: #47A3DA}
 
 
+
 /* =FOOTER
  */
+
 
 footer { padding:75px 0 }
 footer p{ font-size: 0.85em; color: #aaa }
