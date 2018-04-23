@@ -4,17 +4,20 @@
     2017
  */
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:300|Raleway:300,600);
 
-body { font-family: 'roboto', sans-serif; overflow-x: hidden !important }
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+
+body { font-family: 'Quicksand', sans-serif; overflow-x: hidden !important }
 
 
 /* =BOOTSTRAP RESET
  */
 
-nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
+nav { font-family: sans-serif; transition: all ease 0.5s }
 
-.navbar-dark .navbar-nav .nav-link { color: #fff; font-size: 0.85em }
+.navbar-nav{padding-top: 30px; padding-bottom: 30px}
+
+.navbar-dark .navbar-nav .nav-link { color: #fff; font-size: 0.95em; font-family: 'Quicksand', sans-serif; }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus { color: #47A3DA; }
 .navbar-dark .navbar-toggler { background: #000; border-color: #000 }
 
@@ -28,8 +31,17 @@ nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
     .nav-link { padding: 14px }
 }
 
-.btn { border-radius: 50px; padding:15px 50px 16px 50px }
-.btn-sm, .btn-group-sm > .btn { padding: 9px 50px 10px 50px; font-size: 0.875rem; border-radius: 50px }
+.btn { padding:15px 50px 16px 50px; font-family: sans-serif;  }
+.btn-sm, .btn-group-sm > .btn { padding: 9px 35px 10px 35px; font-size: 0.875rem; }
+
+.btn-primary{background-color: hsl(243 49% 37%); border-color: hsl(243 49% 37%)}
+.btn-primary:hover{background-color: hsl(243 49% 30%); border-color: hsl(243 49% 30%)}
+.btn-primary:focus, .btn-primary.focus{background-color: hsl(243 49% 30%); border-color: hsl(243 49% 47%)}
+.btn-primary:active, .btn-primary.active{background-color: hsl(243 49% 30%); border-color: hsl(243 49% 47%)}
+
+.btn-secondary:hover{background-color: #A1091F; border-color: #A1091F}
+.btn-secondary:focus, .btn-secondary.focus {box-shadow: 0 0 0 0.2rem #7B0718}
+.btn-secondary.disabled, .btn-secondary:disabled {background-color: #bb0b24; border-color: #bb0b24}
 
 [class*="btn-outline"] { border:2px solid }
 
@@ -39,24 +51,48 @@ nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
 
 .animated { animation-duration: 1s; animation-fill-mode: both; }
 .fadeIn { animation-name: fadeIn; }
+.fadeInUp { animation-name: fadeInUp; }
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 
 /* =CLASSES
  */
 
+.maps { border-radius: 10px; width: 88%; height: 480px; border: 0;  }
+.border-shadow {box-shadow: 30px 30px 0 #4956bd }
+.rounded { border-radius: 10px !important}
+.border-shadow-width{width: 88%}
 
-.text-light-blue { color: #47A3DA }
+.text-light-blue { color: #4956bd }
 .text-shadow { text-shadow: 0 0 10px #000 }
+.text-gray {color: #41484C}
+/*290190 #8ce7ff
+
+-secondary #0da922*/
+
+.bg-gradient { background: linear-gradient(145deg, #290190 0%,#8ce7ff 100%) }
 
 /* uma porrada de background */
 .bg-light-blue { background: #47A3DA }
-.bg-black { background-color: #000}
-.bg-nav-overlay { background: rgba(0,0,0,0.7) }
+.bg-black { background-color: #443eb3}
+.bg-nav-overlay { background: rgba(0,0,0,0.1) }
 .bg-overlay { background-color: rgba(0,0,0,0.4); }
 .bg-mask { background-image: url(../img/bg/mask.png); }
 .bg-header { background:url(../img/bg/bg-header.jpg) no-repeat top center; background-size: cover; background-attachment: fixed; }
@@ -70,9 +106,10 @@ nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
 
 .line { height: 1px; width: 70px; margin:10px auto 83px auto } /* linha usada embaixo dos titulos */
 
-.padding-banner { padding-top: 290px; padding-bottom: 250px; } /* padding usado no header para centrarlizar o conteudo */
+.padding-banner { padding-top: 250px; } /* padding usado no header para centrarlizar o conteudo */
 .padding-content { padding-top: 125px; padding-bottom: 125px; } /* usado para dar espaco ao conteudo */
-
+.padding-pages { padding-top: 100px; }
+.no-padding { padding: 0 }
 
 @media (max-width:767px){
     .padding-banner { padding-top: 240px; padding-bottom: 200px }
@@ -83,7 +120,7 @@ nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
 }
 
 
-.icon-lg { font-size:50px } /* aumenta a fonte dos elegant icons */
+.icon-lg { font-size: 50px} /* aumenta a fonte dos elegant icons */
 
 .space { margin-top: 125px } /* cria espaco entre itens */
 
@@ -98,27 +135,43 @@ nav { font-family: 'raleway', sans-serif; transition: all ease 1s }
 /* =TYPOGRAPHY
  */
 
-h1, h2, h3 { font-family: 'Raleway', sans-serif; color: #41484C }
+h1{ font-weight: 700; line-height: 1.15em}
+
+h1, h2, h3, h4, h5, h6 { font-weight: 700 }
 
 h1 { font-size: 2.9em; }
 h2 { font-size: 2.4em; }
-h3 { font-size: 1.7em; font-weight: 600 }
-h4 { font-size: 1.5em; }
-h5 { font-size: 1.3em; }
-h6 { font-size: 1.1em; font-weight: 600 }
+h3 { font-size: 1.9em; }
+h4 { font-size: 1.7em; }
+h5 { font-size: 1.5em; }
+h6 { font-size: 1.3em; font-weight: 400;}
 
-p { margin-top: 0; margin-bottom: 1.6em; font-size: 1.3em; line-height: 1.6em; font-weight: 300; color: #41484C }
+p { margin-top: 0; margin-bottom: 1.6em; font-size: 1.3em; line-height: 1.4em; font-weight: 400; color: #41484C }
+p:last-child { margin-bottom: 0 }
 
-a { transition: all ease 0.25s }
+a { transition: all ease 0.15s }
 
-a[href^="tel:"], a[href^="mailto:"] { color: #fff }
-a[href^="tel:"]:hover, a[href^="mailto:"]:hover { color: #47A3DA}
+a[href^="tel:"], a[href^="mailto:"] { color: #ddd }
+a[href^="tel:"]:hover, a[href^="mailto:"]:hover { color: #4956bd; text-decoration: none }
 
 
+/* =HEADER
+*/
+
+.header-img { z-index: 2; top: 0; }
+.banner-img {z-index: 2; top: -80px;}
+ 
 
 /* =FOOTER
  */
 
 
-footer { padding:75px 0 }
-footer p{ font-size: 0.85em; color: #aaa }
+footer { padding:70px 0; background: #999 }
+footer p{ font-size: 0.85em; color: #ddd }
+footer ul { padding: 0; list-style: none }
+footer a { color: #ddd;  padding-right:10px; font-size: 0.9em }
+footer a:hover { color: #4956bd; text-decoration: none; }
+footer h4 { color: #fff }
+
+
+.footer-bottom {clear:both; margin:0; padding:8px 0 0 0; height:38px; background:#888; font-size:0.85em!important; color:#eee}

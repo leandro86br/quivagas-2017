@@ -13,7 +13,7 @@ $(window).scroll(function () {
 
 function mainNav() {
     var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-    if (top > 300) {
+    if (top > 200) {
         $('nav').removeClass('bg-nav-overlay');
         $('nav').addClass('bg-black');
     }
