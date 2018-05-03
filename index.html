@@ -8,10 +8,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<link rel="icon" href="img/favicon.ico">
+<link rel="icon" href="img/favicon.png">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="assets/elegant-icons/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 <link rel="stylesheet" href="css/custom.css">
 
 <title>Qui Vagas | Empregos</title>
@@ -40,13 +39,17 @@
 
 <body class="animated fadeIn">
 
+
+<!-- header
+******************************************************************* -->
+
 <header id="home" class="bg-gradient">
 
 <!-- NAV -->
-<nav class="navbar navbar-expand-md navbar-dark bg-nav-overlay">
+<nav class="navbar navbar-expand-lg navbar-dark bg-nav-overlay">
   <div class="container">
 
-    <a class="navbar-brand" href="#home"><img src="img/new/logo-white.svg" width="190" alt="Quivagas"></a>
+    <a class="navbar-brand" href="index.html"><img src="img/icons/logo-white.svg" width="190" alt="Quivagas"></a>
 
     <a class="navbar-toggler" href="#" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -61,77 +64,83 @@
         <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a>
       </ul>
 
-      <div>&nbsp;&nbsp; <button class="btn btn-success btn-sm text-uppercase" data-toggle="modal" data-target="#vagas">vagas abertas</button></div>
+      <div><button id="busca-vagas" class="btn btn-success btn-sm text-uppercase" data-toggle="modal" data-target="#vagas">vagas abertas</button></div>
 
     </div><!-- NAVBAR COLLAPSE - NAV -->
   </div><!-- CONTAINER -->
 </nav><!-- NAVBAR  -->
- 
 
-    <div class="container padding-pages">
-      <div class="row relative">
-        <div class="col-lg-6">
 
-            <h1 class="text-light">Recrutamento, Sele&ccedil;&atilde;o &amp; Recoloca&ccedil;&atilde;o Profissional</h1>
+<!-- banner
+******************************************************************* -->
 
-            <br>
-            <a href="#mais" id="saibaMais" class="btn btn-primary btn-sm text-uppercase">Saiba Mais</a>
+<div class="container padding-banner">
+  <div class="row">
 
-        </div><!-- col -->
+    <div class="col col-xl-6">
+        <h1 class="text-light">Recrutamento, Sele&ccedil;&atilde;o &amp; Recoloca&ccedil;&atilde;o Profissional</h1>
+        <br>
+        <a href="#mais" id="saibaMais" class="btn btn-primary btn-sm text-uppercase">Saiba Mais</a>
+    </div><!-- col -->
 
-       <div class="col-lg-1"></div>
-        <div class="col-lg-5">
-            <img src="img/new/banner-img.svg" class="absolute banner-img animated fadeInUp" alt="">
-        </div>
-      </div><!-- row -->
-    </div>
+   <div class="col-lg-1 d-none d-xl-block"></div>
 
-  <!-- svg -->
-  <svg viewBox="0 0 1280 140" preserveAspectRatio="none" class="relative svg-bottom" role="presentation" aria-hidden="true">
-    <polygon points="1280 0 1280 140 0 140" fill="#fff"></polygon>
-  </svg>
+    <div class="col-4 col-xl-5 d-none d-md-block">
+        <img src="img/icons/banner-img.svg" class="absolute banner-img animated fadeInUp" alt="">
+    </div><!-- col -->
+
+  </div><!-- row -->
+</div><!-- container -->
+
+<!-- svg -->
+<svg viewBox="0 0 1280 140" preserveAspectRatio="none" class="relative svg-bottom" role="presentation" aria-hidden="true">
+<polygon points="1280 0 1280 140 0 140" fill="#fff"></polygon>
+</svg>
 
 </header>
 
 
+<!-- content
+******************************************************************* -->
 
 <section id="mais">
   <div class="container padding-content">
     <div class="row text-center">
-     
+
       <div class="col-md-4">
-       <img src="img/new/i-search.svg" width="120" alt="">
+       <img src="img/icons/i-search.svg" width="120" alt="">
         <br><br>
 
-        <h3 class="text-light-blue">Recrutamento</h3>
+        <h3 class="text-blue">Recrutamento</h3>
         <p>Assessorar nossos clientes em busca dos melhores profissionais no mercado de trabalho,
          sempre com muito profissionalismo, &eacute;tica, agilidade, e seguran&ccedil;a.</p>
+         <br class="d-md-none">
       </div><!-- COL -->
 
       <div class="col-md-4">
-       <img src="img/new/i-user.svg" width="120" alt="">
+       <img src="img/icons/i-user.svg" width="120" alt="">
         <br><br>
 
-        <h3 class="text-light-blue">Seleção</h3>
+        <h3 class="text-blue">Seleção</h3>
         <p>Assessorar nossos clientes em busca dos melhores profissionais no mercado de trabalho,
          sempre com muito profissionalismo, &eacute;tica, agilidade, e seguran&ccedil;a.</p>
+         <br class="d-md-none">
       </div><!-- COL -->
 
       <div class="col-md-4">
-       <img src="img/new/i-refresh.svg" width="120" alt="">
+       <img src="img/icons/i-refresh.svg" width="120" alt="">
         <br><br>
 
-        <h3 class="text-light-blue">Recolocação</h3>
+        <h3 class="text-blue">Recolocação</h3>
         <p>Assessorar nossos clientes em busca dos melhores profissionais no mercado de trabalho,
          sempre com muito profissionalismo, &eacute;tica, agilidade, e seguran&ccedil;a.</p>
-         
+
          <a href="servicos.html" class="btn btn-success btn-sm text-uppercase">Nossos Serviços</a>
       </div><!-- COL -->
 
     </div><!-- ROW -->
   </div><!-- CONTAINER -->
 </section>
-
 
 
 <!-- FOOTER
@@ -141,60 +150,74 @@
 <svg viewBox="0 0 1280 70" preserveAspectRatio="none" class="relative svg-bottom" role="presentation" aria-hidden="true">
   <polygon points="1280 0 1280 70 0 70" fill="#999"></polygon>
 </svg>
-    
+
 <footer>
 <div class="container">
 <div class="row">
 
-<div class="col-md-3">
+    <div class="col col-lg-3">
+        <h4>Navegue Aqui</h4>
 
-    <h4>Navegue Aqui</h4>
-    <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="servicos.html">servicos</a></li>
-        <li><a href="quem-somos.html">quem somos</a></li>
-        <li><a href="contato.html">contato</a></li>
-    </ul>
+        <a href="index.html">Home</a> <br>
+        <a href="servicos.html">Servi&ccedil;os</a> <br>
+        <a href="quem-somos.html">Quem Somos</a> <br>
+        <a href="contato.html">Contato</a> <br>
+        <br class="d-lg-none">
+    </div><!-- col -->
 
-</div>
+    <div class="w-100 d-md-none"></div>
 
-<div class="col-md-3">
-    <h4>Endereço</h4>
-    <p>Rua Pires Pimentel, 47 <br> 
-    Vila Prudente - São Paulo - SP <br>
-    Cep 03138-040 
-    </p>
-</div>
+    <div class="col col-lg-3">
+        <h4>Endereço</h4>
+        <p>Rua Pires Pimentel, 47 <br>
+        Vila Prudente <br>
+        São Paulo - SP <br>
+        Cep 03138-040
+        </p>
+        <br class="d-lg-none">
+    </div><!-- col -->
 
-<div class="col-md-3">
-    <h4>Contato</h4>
-    <p><a href="tel:11-2916-1446" >(11) 2916-1446</a> <br>
-        <a href="tel:11-9-9950-2154" >(11) 9-9950-2154 </a></p>
-    <p><a href="mailto:contato@quivagas.com.br" target="_blank">contato@quivagas.com.br</a></p>
-</div>
+    <div class="w-100 d-lg-none"></div>
 
-<div class="col-md-3 text-right">
-    <br><br>
-    <img src="img/new/logo-white.svg" width="180" alt="">
-</div>
+    <div class="col col-lg-3">
+        <h4>Contato</h4>
 
-</div>
-</div>
+        <a href="tel:11-2916-1446" >(11) 2916-1446</a> <br>
+        <a href="tel:11-9-9950-2154" >(11) 9-9950-2154 </a> <br>
+
+        <a href="mailto:contato@quivagas.com.br" target="_blank">contato@quivagas.com.br</a>
+    </div><!-- col -->
+
+    <div class="w-100 d-md-none"></div>
+
+    <div class="col col-lg-3 text-lg-right">
+        <br><br>
+        <img src="img/icons/logo-white.svg" width="180" alt="">
+    </div><!-- col -->
+
+</div><!-- row -->
+</div><!-- container -->
 </footer>
 
 <div class="footer-bottom">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 text-md-right">
-        <span>
+
+      <div class="col-md-12 text-lg-right">
+
           <i class="fa fa-code"></i>
           &lt; &gt;  <a href="mailto:leandro.zambelli@yahoo.com" target="_blank">Leandro.Zambelli@yahoo.com</a> &lt; / &gt;
           <i class="fa fa-code"></i>
-        </span>
+
       </div><!-- col -->
+
     </div><!-- row -->
   </div><!-- container -->
 </div><!-- footer-bottom -->
+
+<a href="#home" class="back-top hide-me text-center">
+    &#94;
+</a>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -205,8 +228,35 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+<script src="js/functions.js" async defer></script>
 
-<!-- ==vagas abertas
+<script>
+
+    var
+        busca_vagas    = document.getElementById('busca-vagas');
+    
+    
+    busca_vagas.addEventListener('click', function(){ request('vagas.txt') }, false);
+    
+    function request(url){
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if(xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById('output').innerHTML = xhr.responseText;
+            }
+        }
+        
+        xhr.open('get', url, true);
+        xhr.send();
+        
+        document.getElementById('output').innerHTML = 'Waiting for response...';
+    }
+    
+    
+</script>
+
+
+<!-- =vagas abertas
 *************************************************  -->
 
 <div class="modal fade" id="vagas" tabindex="-1" role="dialog" aria-labelledby="vagas" aria-hidden="true">
@@ -225,22 +275,9 @@
 
 
 <div class="col-lg-12">
-<h3>Web Designer</h3>
-<p>Lorem ipsum dolor sit amet, no eum corpora democritum, rationibus intellegebat pro no. Tibique nominavi electram id eum. Sumo unum scriptorem ea vel, dictas propriae pro et. His an essent impedit, facilis convenire conceptam quo et. Ne fuisset consulatu mel, dolorum conclusionemque mel ut. Semper noluisse voluptatibus sed id, vim ne quando semper, mel ad consequat temporibus.</p>
-<p>
-Fone: (11) 2916-1446 <br>
-Email: contato@quivagas.com.br <br>
-OBS: Ao entrar em contato, mencione o código da vaga </p>
-<hr>
-</div><!-- col -->
+    <div id="output">
 
-<div class="col-lg-12">
-<h3>Programador Java</h3>
-<p>Lorem ipsum dolor sit amet, no eum corpora democritum, rationibus intellegebat pro no. Tibique nominavi electram id eum. Sumo unum scriptorem ea vel, dictas propriae pro et. His an essent impedit, facilis convenire conceptam quo et. Ne fuisset consulatu mel, dolorum conclusionemque mel ut. Semper noluisse voluptatibus sed id, vim ne quando semper, mel ad consequat temporibus.</p>
-<p>
-Fone: (11) 2916-1446 <br>
-Email: contato@quivagas.com.br <br>
-OBS: Ao entrar em contato, mencione o código da vaga </p>
+    </div>
 <hr>
 </div><!-- col -->
 

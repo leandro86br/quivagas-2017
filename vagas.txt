@@ -1,0 +1,26 @@
+<h3>Web Designer</h3>
+<p>Lorem ipsum dolor sit amet, no eum corpora democritum, rationibus intellegebat pro no. Tibique nominavi electram id eum. Sumo unum scriptorem ea vel, dictas propriae pro et. His an essent impedit, facilis convenire conceptam quo et. Ne fuisset consulatu mel, dolorum conclusionemque mel ut. Semper noluisse voluptatibus sed id, vim ne quando semper, mel ad consequat temporibus.</p>
+
+<p>Lorem ipsum dolor sit amet, no eum corpora democritum, rationibus intellegebat pro no. Tibique nominavi electram id eum. Sumo unum scriptorem ea vel, dictas propriae pro et. His an essent impedit, facilis convenire conceptam quo et. Ne fuisset consulatu mel, dolorum conclusionemque mel ut. Semper noluisse voluptatibus sed id, vim ne quando semper, mel ad consequat temporibus.</p>
+<p>
+</p>
+<br>
+Fone: (11) 2916-1446 <br>
+Email: contato@quivagas.com.br <br>
+OBS: Ao entrar em contato, mencione o código da vaga<br>
+
+<hr>
+
+<h3> Titulo </h3>
+
+<p> paragrafos </p>
+<p> paragrafos </p>
+
+<p>
+br é pra dar quebra de linha dentro de um mesmo paragrafo
+Fone: (11) 2916-1446 <br>
+Email: contato@quivagas.com.br <br>
+OBS: Ao entrar em contato, mencione o código da vaga <br>
+</p>
+
+<hr>

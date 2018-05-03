@@ -1,45 +1,33 @@
-/* NAVIGATION VISIBLE ON SCROLL
+/*
+    Author: Leandro.Zambelli@yahoo.com
 */
 
 
-/* FIXED NAV OVERLAY EFFECT
+
+/* SHOW BACK TOP BUTTON
 */
 
-mainNav();
-
-$(window).scroll(function () {
-    mainNav();
-});
-
-function mainNav() {
-    var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-    if (top > 200) {
-        $('nav').removeClass('bg-nav-overlay');
-        $('nav').addClass('bg-black');
-    }
-    else {
-        $('nav').removeClass('bg-black');
-        $('nav').addClass('bg-nav-overlay');
+function backTopButton() {
+    
+    var $back_top = document.getElementsByClassName('back-top')[0];
+    
+    window.onscroll = function scrollFunction() {
+        
+        if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+            $back_top.classList.remove('hide-me');
+        } else {
+            $back_top.classList.add('hide-me');
+        }
     }
 }
 
+backTopButton();
 
-/* NAVBAR-COLLAPSE CLOSE ON NAV-LINK CLICK
+
+/* BACK TO TOP ANIMATION
 */
 
-$(document).click(function(e) {
-	if (!$(e.target).is('.navbar-collapse')) {
-    	$('.collapse').collapse('hide');	    
-    }
-});
-
-
-/* ONE PAGE SCROLL
-*/
-
-onePage();
-
-function onePage(){
+function backTop(){
   $('a[href^="#"]').on('click', function(event) {
       var target = $(this.getAttribute('href'));
       if( target.length ) {
@@ -50,3 +38,5 @@ function onePage(){
       }
   });
 }
+
+backTop();
