@@ -44,7 +44,7 @@
         <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a>
       </ul>
 
-      <div><button class="btn btn-success btn-sm text-uppercase" data-toggle="modal" data-target="#vagas">vagas abertas</button></div>
+      <div><button id="busca-vagas" class="btn btn-success btn-sm text-uppercase" data-toggle="modal" data-target="#vagas">vagas abertas</button></div>
 
     </div><!-- NAVBAR COLLAPSE - NAV -->
   </div><!-- CONTAINER -->
@@ -60,8 +60,8 @@
         <div class="col col-xl-6">
             <h1 class="text-light">Contato</h1>
             <br>
-            <p class="text-light">A Empresa Quivagas divide suas operações em dois locais. <br> O local principal, a sede, é localizado na vila prudente, o outro local, apenas para entrevistar os candidatos, está localizada no bairro paraíso.</p>
-            <p class="text-light">Ambos os locais são de fácil acesso por estações de metrô ou ônibus.</p>
+            <p class="text-light">A Empresa Quivagas concentra suas opera&ccedil;&otilde;es em S&atilde;o Paulo. A sede &eacute; localizado na vila prudente, zona leste da capital.</p>
+            <p class="text-light">O local &eacute; de f&aacute;cil acesso por esta&ccedil;&otilde;es de metr&ocirc; ou &ocirc;nibus.</p>
         </div><!-- col -->
 
         <div class="col-xl-1 d-none d-xl-block"></div>
@@ -91,19 +91,21 @@
         <div class="col-md-4">
             <h3 class="text-blue ">Sede</h3>
             <p>Rua Pires Pimentel, 47 <br>
-            Vila Prudente - São Paulo - SP <br>
+            Vila Prudente - S&atilde;o Paulo - SP <br>
             Cep 03138-040
             </p>
             <br class="d-md-none">
         </div><!-- COL -->
 
-        <div class="col-md-4 text-md-center">
+<!--
+     <div class="col-md-4 text-md-center">
             <h3 class="text-blue">Entrevistas</h3>
             <p>Rua Chui, 147  <br>
-            Paraíso - São Paulo - SP
+            Para&iacute;so - S&atilde;o Paulo - SP
             <br> Cep 04104-050</p>
             <br class="d-md-none">
-        </div><!-- COL -->
+        </div> --><!-- COL -->
+        <div class="col-4"></div>
 
         <div class="col-md-4 text-md-right">
             <h3 class="text-blue">Fones &amp; Email</h3>
@@ -142,10 +144,10 @@
     <div class="w-100 d-md-none"></div>
 
     <div class="col col-lg-3">
-        <h4>Endereço</h4>
+        <h4>Endere&ccedil;o</h4>
         <p>Rua Pires Pimentel, 47 <br>
         Vila Prudente <br>
-        São Paulo - SP <br>
+        S&atilde;o Paulo - SP <br>
         Cep 03138-040
         </p>
         <br class="d-lg-none">
@@ -225,7 +227,7 @@
 </script>
 
 
-<!-- ==vagas abertas
+<!-- =vagas abertas
 *************************************************  -->
 
 <div class="modal fade" id="vagas" tabindex="-1" role="dialog" aria-labelledby="vagas" aria-hidden="true">
@@ -244,35 +246,11 @@
 
 
 <div class="col-lg-12">
-<h3>Web Designer</h3>
-<p>Lorem ipsum dolor sit amet, no eum corpora democritum, rationibus intellegebat pro no. Tibique nominavi electram id eum. Sumo unum scriptorem ea vel, dictas propriae pro et. His an essent impedit, facilis convenire conceptam quo et. Ne fuisset consulatu mel, dolorum conclusionemque mel ut. Semper noluisse voluptatibus sed id, vim ne quando semper, mel ad consequat temporibus.</p>
-<p>
-Fone: (11) 2916-1446 <br>
-Email: contato@quivagas.com.br <br>
-OBS: Ao entrar em contato, mencione o código da vaga </p>
+    <div id="output">
+
+    </div>
 <hr>
 </div><!-- col -->
-
-<div class="col-lg-12">
-<h3>Programador Java</h3>
-<p>Lorem ipsum dolor sit amet, no eum corpora democritum, rationibus intellegebat pro no. Tibique nominavi electram id eum. Sumo unum scriptorem ea vel, dictas propriae pro et. His an essent impedit, facilis convenire conceptam quo et. Ne fuisset consulatu mel, dolorum conclusionemque mel ut. Semper noluisse voluptatibus sed id, vim ne quando semper, mel ad consequat temporibus.</p>
-<p>
-Fone: (11) 2916-1446 <br>
-Email: contato@quivagas.com.br <br>
-OBS: Ao entrar em contato, mencione o código da vaga </p>
-<hr>
-</div><!-- col -->
-
-<div class="col-lg-12">
-<h3>Engenheiro Quimico</h3>
-<p>Lorem ipsum dolor sit amet, no eum corpora democritum, rationibus intellegebat pro no. Tibique nominavi electram id eum. Sumo unum scriptorem ea vel, dictas propriae pro et. His an essent impedit, facilis convenire conceptam quo et. Ne fuisset consulatu mel, dolorum conclusionemque mel ut. Semper noluisse voluptatibus sed id, vim ne quando semper, mel ad consequat temporibus.</p>
-<p>
-Fone: (11) 2916-1446 <br>
-Email: contato@quivagas.com.br <br>
-OBS: Ao entrar em contato, mencione o código da vaga </p>
-<hr>
-</div><!-- col -->
-
 
 </div><!-- row -->
 </div><!-- container fluid -->
@@ -280,12 +258,6 @@ OBS: Ao entrar em contato, mencione o código da vaga </p>
 </div><!-- modal content -->
 </div><!-- modal dialog -->
 </div><!-- modal  -->
-
-
-<!--
-Header photo by Javi_Indy - Freepik
-Contact photo by Tirachard - Freepik
--->
 
 </body>
 </html>

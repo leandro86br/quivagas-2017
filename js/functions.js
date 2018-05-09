@@ -3,7 +3,6 @@
 */
 
 
-
 /* SHOW BACK TOP BUTTON
 */
 
@@ -40,3 +39,37 @@ function backTop(){
 }
 
 backTop();
+
+
+/* BUSCA VAGAS DISPONIVEIS
+*/
+
+function buscaVagas(){
+
+    var busca_vagas = document.getElementById('busca-vagas');
+
+    busca_vagas.addEventListener('click', function(){ request('../vagas.txt') }, false);
+    
+    function request(url){
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if(xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById('output').innerHTML = xhr.responseText;
+            }
+        }
+        
+        xhr.open('GET', url, true);
+        xhr.send();
+        
+        document.getElementById('output').innerHTML = 'Nenhuma vaga dispon&iacute;vel no momento';
+        
+    }
+}
+
+buscaVagas();
+
+/*
+    $("#busca-vagas").click(function(){
+        $("#output").load("vagas.txt");
+    });
+*/

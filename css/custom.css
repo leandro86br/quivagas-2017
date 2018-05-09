@@ -1,5 +1,5 @@
 /*
-    Author Leandro.Zambelli@yahoo.com
+    Author: Leandro.Zambelli@yahoo.com
  */
 
 
@@ -44,6 +44,8 @@ nav { font-family: sans-serif; transition: all ease 0.5s }
 .btn-primary:focus, .btn-primary.focus{background-color: hsl(243 49% 30%); border-color: hsl(243 49% 47%)}
 .btn-primary:active, .btn-primary.active{background-color: hsl(243 49% 30%); border-color: hsl(243 49% 47%)}
 
+a.btn[href^="mailto:"] { color: #fff }
+
 .rounded { border-radius: 10px !important}
 
 
@@ -84,14 +86,28 @@ nav { font-family: sans-serif; transition: all ease 0.5s }
         .banner-img { z-index: 2; top: -20px; }
     }
 
-.maps { border-radius: 10px; width: 88%; height: 480px; border: 0;  }
+.maps { border-radius: 10px; width: 87%; height: 480px; border: 0;  }
 
-    @media (max-width:991px){
-        .maps { height: 250px}
+
+    @media (max-width:1200px){
+        .border-shadow { height: 390px }
     }
 
-.border-shadow {box-shadow: 30px 30px 0 #4956bd }
-.border-shadow-width{width: 88%}
+    @media (max-width:991px){
+        .maps { height: 250px }
+    }
+
+
+.border-shadow { box-shadow: 28px 28px 0 #4956bd }
+.border-shadow-width { width: 87%; height: auto } /* usado na foto da pagina quem somos */
+
+    @media (max-width:1200px){
+        .border-shadow { box-shadow: 24px 24px 0 #4956bd }
+    }
+
+    @media (max-width:991px){
+        .border-shadow { box-shadow: 14px 14px 0 #4956bd }
+    }
 
 .text-blue { color: #4956bd }
 .text-shadow { text-shadow: 0 0 10px #000 }
@@ -105,12 +121,12 @@ nav { font-family: sans-serif; transition: all ease 0.5s }
 .padding-banner { padding-top: 100px; } /* usado nos banners para dar espaçamento */
 .padding-content { padding-top: 125px; padding-bottom: 125px; } /* usado para dar espaco ao conteudo */
 
-    @media (max-width:767px){
-        .padding-banner { padding-top: 100px; padding-bottom: 40px }
-    }
-
     @media (max-width:991px){
         .padding-banner { padding-top: 80px; padding-bottom: 30px }
+    }
+
+    @media (max-width:767px){
+        .padding-banner { padding-top: 100px; padding-bottom: 40px }
     }
 
 .space { margin-top: 125px } /* cria espaco entre itens */
@@ -159,7 +175,6 @@ h6 { font-size: 1.3em; font-weight: 400;}
         h2 { font-size: 2.2em; }
         h3 { font-size: 1.9em; }
 
-
     }
 
     @media (max-width:991px){
@@ -167,7 +182,6 @@ h6 { font-size: 1.3em; font-weight: 400;}
         h1 { font-size: 2.5em; }
         h2 { font-size: 2.0em; }
         h3 { font-size: 1.8em; }
-
 
     }
 

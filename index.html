@@ -121,9 +121,8 @@
        <img src="img/icons/i-user.svg" width="120" alt="">
         <br><br>
 
-        <h3 class="text-blue">Seleção</h3>
-        <p>Assessorar nossos clientes em busca dos melhores profissionais no mercado de trabalho,
-         sempre com muito profissionalismo, &eacute;tica, agilidade, e seguran&ccedil;a.</p>
+        <h3 class="text-blue">Seleç&atilde;o</h3>
+        <p>O objetivo &eacute; atrair e selecionar profissionais qualificados, com perfil aderente &agrave;s necessidades das atividades propostas pela empresa.</p>
          <br class="d-md-none">
       </div><!-- COL -->
 
@@ -131,9 +130,8 @@
        <img src="img/icons/i-refresh.svg" width="120" alt="">
         <br><br>
 
-        <h3 class="text-blue">Recolocação</h3>
-        <p>Assessorar nossos clientes em busca dos melhores profissionais no mercado de trabalho,
-         sempre com muito profissionalismo, &eacute;tica, agilidade, e seguran&ccedil;a.</p>
+        <h3 class="text-blue">Recolocaç&atilde;o</h3>
+        <p>Recolocar o profissional assegurando que a ele esteja no lugar certo, no melhor tempo e com o menor custo poss&iacute;vel</p>
 
          <a href="servicos.html" class="btn btn-success btn-sm text-uppercase">Nossos Serviços</a>
       </div><!-- COL -->
@@ -171,7 +169,7 @@
         <h4>Endereço</h4>
         <p>Rua Pires Pimentel, 47 <br>
         Vila Prudente <br>
-        São Paulo - SP <br>
+        S&atilde;o Paulo - SP <br>
         Cep 03138-040
         </p>
         <br class="d-lg-none">
@@ -219,7 +217,6 @@
     &#94;
 </a>
 
-
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -230,30 +227,6 @@
 
 <script src="js/functions.js" async defer></script>
 
-<script>
-
-    var
-        busca_vagas    = document.getElementById('busca-vagas');
-    
-    
-    busca_vagas.addEventListener('click', function(){ request('vagas.txt') }, false);
-    
-    function request(url){
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-            if(xhr.readyState === 4 && xhr.status === 200) {
-                document.getElementById('output').innerHTML = xhr.responseText;
-            }
-        }
-        
-        xhr.open('get', url, true);
-        xhr.send();
-        
-        document.getElementById('output').innerHTML = 'Waiting for response...';
-    }
-    
-    
-</script>
 
 
 <!-- =vagas abertas
@@ -273,24 +246,12 @@
 <div class="container-fluid">
 <div class="row">
 
-
 <div class="col-lg-12">
     <div id="output">
 
     </div>
 <hr>
 </div><!-- col -->
-
-<div class="col-lg-12">
-<h3>Engenheiro Quimico</h3>
-<p>Lorem ipsum dolor sit amet, no eum corpora democritum, rationibus intellegebat pro no. Tibique nominavi electram id eum. Sumo unum scriptorem ea vel, dictas propriae pro et. His an essent impedit, facilis convenire conceptam quo et. Ne fuisset consulatu mel, dolorum conclusionemque mel ut. Semper noluisse voluptatibus sed id, vim ne quando semper, mel ad consequat temporibus.</p>
-<p>
-Fone: (11) 2916-1446 <br>
-Email: contato@quivagas.com.br <br>
-OBS: Ao entrar em contato, mencione o código da vaga </p>
-<hr>
-</div><!-- col -->
-
 
 </div><!-- row -->
 </div><!-- container fluid -->
