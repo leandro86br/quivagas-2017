@@ -158,7 +158,7 @@ a.btn[href^="mailto:"] { color: #fff }
 /* =TYPOGRAPHY
  */
 
-h1{ font-weight: 700; line-height: 1.15em}
+h1 { line-height: 1.15em }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 700 }
 
