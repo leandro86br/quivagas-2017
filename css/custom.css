@@ -55,6 +55,7 @@ a.btn[href^="mailto:"] { color: #fff }
 .animated { animation-duration: 1s; animation-fill-mode: both; }
 .fadeIn { animation-name: fadeIn; }
 .fadeInUp { animation-name: fadeInUp; }
+.fadeInRight { animation-name: fadeInRight; }
 
 
     @keyframes fadeIn {
@@ -66,6 +67,18 @@ a.btn[href^="mailto:"] { color: #fff }
       from {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
       }
 
       to {
@@ -169,14 +182,6 @@ h4 { font-size: 1.7em; }
 h5 { font-size: 1.5em; }
 h6 { font-size: 1.3em; font-weight: 400;}
 
-    @media (max-width:767px){
-
-        h1 { font-size: 2.7em; }
-        h2 { font-size: 2.2em; }
-        h3 { font-size: 1.9em; }
-
-    }
-
     @media (max-width:991px){
 
         h1 { font-size: 2.5em; }
@@ -184,6 +189,7 @@ h6 { font-size: 1.3em; font-weight: 400;}
         h3 { font-size: 1.8em; }
 
     }
+
 
 p { margin-top: 0; margin-bottom: 1.6em; font-size: 1.3em; line-height: 1.4em; font-weight: 400; color: #41484C }
 p:last-child { margin-bottom: 0 }
@@ -197,7 +203,7 @@ a[href^="tel:"]:hover, a[href^="mailto:"]:hover { color: #fff; text-decoration: 
 /* =FOOTER
  */
 
-footer { padding:70px 0; background: #999 }
+footer { padding:70px 0; background: #888 }
 
 footer h4 { color: #fff }
 footer p{ font-size: 0.85em; color: #ddd }
@@ -205,4 +211,4 @@ footer ul { padding: 0; list-style: none }
 footer a { color: #ddd;  padding-right:10px; font-size: 0.85em }
 footer a:hover { color: #fff; text-decoration: none; }
 
-.footer-bottom {clear:both; margin:0; padding:8px 0 0 0; height:38px; background:#888; font-size:0.85em; color:#eee}
+.footer-bottom {clear:both; margin:0; padding:8px 0 0 0; height:38px; background:#777; font-size:0.85em; color:#eee}

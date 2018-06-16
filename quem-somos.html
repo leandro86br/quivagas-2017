@@ -58,7 +58,7 @@
 <div class="container padding-banner">
     <div class="row relative">
 
-        <div class="col col-xl-6">
+        <div class="col col-xl-6 reveal-txt-left">
             <h1 class="text-light">Quem Somos</h1>
             <br>
             <p class="text-light">
@@ -74,7 +74,7 @@
         <div class="col-xl-1 d-none d-xl-block"></div>
 
         <div class="col-4 col-lg-5 d-none d-md-block">
-            <img src="img/foto.jpg" class="absolute img-fluid header-img rounded border-shadow border-shadow-width" alt="">
+            <img src="img/foto.jpg" class="absolute img-fluid header-img rounded border-shadow border-shadow-width reveal-illustration-right" alt="">
         </div><!-- col -->
 
     </div><!-- row -->
@@ -93,7 +93,7 @@
 
 <section>
 <div class="container padding-content">
-    <div class="row ">
+    <div class="row reveal-txt-bottom">
 
         <div class="col-md-4">
             <h3 class="text-blue">Miss&atilde;o</h3>
@@ -125,7 +125,7 @@
 
 <!-- svg foot -->
 <svg viewBox="0 0 1280 70" preserveAspectRatio="none" class="relative svg-bottom" role="presentation" aria-hidden="true">
-  <polygon points="1280 0 1280 70 0 70" fill="#999"></polygon>
+  <polygon points="1280 0 1280 70 0 70" fill="#888"></polygon>
 </svg>
 
 <footer>
@@ -206,6 +206,15 @@
         crossorigin="anonymous"></script>
 
 <script src="js/functions.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+    window.sr = ScrollReveal();
+
+        sr.reveal('.reveal-txt-left', { distance: '100px', origin: 'left', duration: 350, delay: 50, });
+        sr.reveal('.reveal-illustration-right', { distance: '100px', origin: 'right', duration: 500, delay: 150, });
+        sr.reveal('.reveal-txt-bottom', { distance: '100px', origin: 'bottom', duration: 500, delay: 150, });
+        
+</script>  
 
 
 <!-- =vagas abertas

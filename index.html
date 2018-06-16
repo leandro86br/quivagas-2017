@@ -105,8 +105,59 @@
 
 <section id="mais">
   <div class="container padding-content">
-    <div class="row text-center">
+    <div class="row justify-content-center align-items-center">
+    
+        <div class="col-md-4 reveal-illustration-left">
+            <img src="img/icons/index-1.svg" class="img-fluid" alt="">
+            <br class="d-block d-md-none">
+            <br class="d-block d-md-none">
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5 reveal-txt-right">
+            <h3 class="text-blue">Recrutamento</h3>
+            <p>Assessorar nossos clientes em busca dos melhores profissionais no mercado de trabalho,
+             sempre com muito profissionalismo, &eacute;tica, agilidade, e seguran&ccedil;a.</p>
+        </div>
+    
+    </div>
+      
+    <div class="space"></div>
+    
+    <div class="row justify-content-center align-items-center">
+    
+        <div class="col-md-5 reveal-txt-left">
+           <h3 class="text-blue">Seleç&atilde;o</h3>
+            <p>O objetivo &eacute; atrair e selecionar profissionais qualificados, com perfil aderente &agrave;s necessidades das atividades propostas pela empresa.</p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4 reveal-illustration-right order-first order-md-last">
+            <img src="img/icons/index-2.svg" class="img-fluid" alt="">
+            <br class="d-block d-md-none">
+            <br class="d-block d-md-none">
+        </div>
+    
+    </div>
+    
+    <div class="space"></div>
+    
+    <div class="row justify-content-center align-items-center">
+    
+        <div class="col-md-4 reveal-illustration-left">
+            <img src="img/icons/index-3.svg" class="img-fluid" alt="">
+            <br class="d-block d-md-none">
+            <br class="d-block d-md-none">
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5 reveal-txt-right">
+            <h3 class="text-blue">Recolocaç&atilde;o</h3>
+            <p>Recolocar o profissional assegurando que a ele esteja no lugar certo, no melhor tempo e com o menor custo poss&iacute;vel</p>
 
+             <a href="servicos.html" class="btn btn-success btn-sm text-uppercase">Nossos Serviços</a>
+        </div>
+    
+    </div>
+    
+<!--
       <div class="col-md-4">
        <img src="img/icons/i-search.svg" width="120" alt="">
         <br><br>
@@ -116,7 +167,7 @@
          sempre com muito profissionalismo, &eacute;tica, agilidade, e seguran&ccedil;a.</p>
          <br class="d-md-none">
       </div><!-- COL -->
-
+<!--
       <div class="col-md-4">
        <img src="img/icons/i-user.svg" width="120" alt="">
         <br><br>
@@ -125,7 +176,7 @@
         <p>O objetivo &eacute; atrair e selecionar profissionais qualificados, com perfil aderente &agrave;s necessidades das atividades propostas pela empresa.</p>
          <br class="d-md-none">
       </div><!-- COL -->
-
+<!--
       <div class="col-md-4">
        <img src="img/icons/i-refresh.svg" width="120" alt="">
         <br><br>
@@ -136,7 +187,7 @@
          <a href="servicos.html" class="btn btn-success btn-sm text-uppercase">Nossos Serviços</a>
       </div><!-- COL -->
 
-    </div><!-- ROW -->
+    <!--</div><!-- ROW -->
   </div><!-- CONTAINER -->
 </section>
 
@@ -146,7 +197,7 @@
 
 <!-- svg foot -->
 <svg viewBox="0 0 1280 70" preserveAspectRatio="none" class="relative svg-bottom" role="presentation" aria-hidden="true">
-  <polygon points="1280 0 1280 70 0 70" fill="#999"></polygon>
+  <polygon points="1280 0 1280 70 0 70" fill="#888"></polygon>
 </svg>
 
 <footer>
@@ -226,6 +277,17 @@
         crossorigin="anonymous"></script>
 
 <script src="js/functions.js" async defer></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+    window.sr = ScrollReveal();
+
+        sr.reveal('.reveal-txt-left', { distance: '100px', origin: 'left', duration: 350, delay: 50, });
+        sr.reveal('.reveal-txt-right', { distance: '100px', origin: 'right', duration: 350, delay: 50, });
+        
+        sr.reveal('.reveal-illustration-left', { distance: '100px', origin: 'left', duration: 500, delay: 150, });
+        sr.reveal('.reveal-illustration-right', { distance: '100px', origin: 'right', duration: 500, delay: 150, });
+        
+</script>
 
 
 

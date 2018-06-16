@@ -58,7 +58,7 @@
 <div class="container padding-banner text-light">
     <div class="row">
 
-        <div class="col col-xl-6">
+        <div class="col col-xl-6 reveal-txt-left">
             <h1>Serviços</h1>
             <h2>
             Recrutamento &amp; Sele&ccedil;&atilde;o</h2>
@@ -73,7 +73,7 @@
         <div class="col-xl-1 d-none d-xl-block"></div>
 
         <div class="col-4 col-lg-5 d-none d-md-block">
-            <img src="img/icons/servicos-img.svg" class="absolute img-fluid header-img" alt="">
+            <img src="img/icons/servicos-img.svg" class="absolute img-fluid header-img reveal-illustration-right" alt="">
         </div><!-- COL -->
 
     </div><!-- row -->
@@ -94,13 +94,13 @@
   <div class="container padding-content">
     <div class="row align-items-center">
 
-        <div class="col-4 col-xl-5 d-none d-md-block">
+        <div class="col-4 col-xl-5 d-none d-md-block reveal-illustration-left">
             <img src="img/icons/servicos-img-2.svg" class="img-fluid" alt="">
         </div><!-- COL -->
 
         <div class="col-xl-1 d-none d-xl-block"></div>
 
-        <div class="col col-xl-6">
+        <div class="col col-xl-6 reveal-txt-right">
             <h2><small>Como funciona?</small><br>
             <span class="text-blue">Nosso processo de recrutamento e sele&ccedil;&atilde;o:</span><br></h2>
             <br>
@@ -133,7 +133,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col col-lg-7">
+            <div class="col col-lg-7 reveal-txt-left">
                 <blockquote class="blockquote text-white"><h6>Nosso processo seletivo assegura que a pessoa certa esteja no lugar certo,
                 no melhor tempo e com o menor custo poss&iacute;vel</h6></blockquote>
                 <br>
@@ -143,7 +143,7 @@
             <div class="col-lg-1 d-none d-lg-block"></div>
 
             <div class="col-3 col-lg-4 d-none d-md-block">
-                <img src="img/icons/servicos-img-3.svg" class="img-fluid absolute footer-img" alt="">
+                <img src="img/icons/servicos-img-3.svg" class="img-fluid absolute footer-img reveal-illustration-right" alt="">
             </div><!-- COL -->
 
         </div><!-- row -->
@@ -151,7 +151,7 @@
 
 <!-- svg foot -->
 <svg viewBox="0 0 1280 70" preserveAspectRatio="none" class="relative svg-bottom" role="presentation" aria-hidden="true">
-    <polygon points="1280 0 1280 70 0 70" fill="#999"></polygon>
+    <polygon points="1280 0 1280 70 0 70" fill="#888"></polygon>
 </svg>
 
 </section>
@@ -239,6 +239,17 @@
         crossorigin="anonymous"></script>
 
 <script src="js/functions.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+    window.sr = ScrollReveal();
+
+        sr.reveal('.reveal-txt-left', { distance: '100px', origin: 'left', duration: 350, delay: 50, });
+        sr.reveal('.reveal-txt-right', { distance: '100px', origin: 'right', duration: 350, delay: 50, });
+        
+        sr.reveal('.reveal-illustration-left', { distance: '100px', origin: 'left', duration: 500, delay: 150, });
+        sr.reveal('.reveal-illustration-right', { distance: '100px', origin: 'right', duration: 500, delay: 150, });
+        
+</script>  
 
 
 <!-- =vagas abertas
