@@ -1,5 +1,4 @@
-/*
-    Author: Leandro.Zambelli@yahoo.com
+/* Leandro Zambelli
 */
 
 
@@ -33,7 +32,7 @@ function backTop(){
          event.preventDefault();
          $('html, body').stop().animate({
              scrollTop: target.offset().top
-         }, 1000);
+         }, 500);
       }
   });
 }
@@ -69,7 +68,8 @@ function buscaVagas(){
 buscaVagas();
 
 /*
-    $("#busca-vagas").click(function(){
-        $("#output").load("vagas.txt");
-    });
+jquery
+$("#busca-vagas").click(function(){
+    $("#output").on(load, "vagas.txt");
+});
 */

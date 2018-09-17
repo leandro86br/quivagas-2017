@@ -1,15 +1,71 @@
-/*
-    Author: Leandro.Zambelli@yahoo.com
- */
+/*  Leandro Zambelli
+*/
 
 
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 
-body { font-family: 'Quicksand', sans-serif; overflow-x: hidden !important }
+body {
+    font-family: 'Quicksand', sans-serif; 
+    overflow-x: hidden !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Custom scrollbar
+*/
+
+::-webkit-scrollbar { width: 12px }
+::-webkit-scrollbar-track { background: #4956bd }
+::-webkit-scrollbar-thumb { background: #290190 }
+
+
+/* Loading screen
+*/
+
+#load { display: none }
+.loading { position: fixed; width: 100%; height: 100%; background: linear-gradient(145deg, #290190 0%,#8ce7ff 100%); overflow: hidden; z-index: 500}
+
+.centralized-text {width: 100%; position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%) }
+
+/* Spiner
+*/
+
+.spinner { width: 40px; height: 40px; position: relative; margin: 0 auto; }
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 { -webkit-animation-delay: -1.0s; animation-delay: -1.0s; }
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+    0%, 100% { transform: scale(0.0); -webkit-transform: scale(0.0); }
+    50% { transform: scale(1.0); -webkit-transform: scale(1.0); }
+}
 
 
 /* =BOOTSTRAP RESET
  */
+
+.container-fluid { max-width: 1680px}
 
 nav { font-family: sans-serif; transition: all ease 0.5s }
 
@@ -36,13 +92,39 @@ nav { font-family: sans-serif; transition: all ease 0.5s }
 
     }
 
-.btn { padding:15px 50px 16px 50px; font-family: sans-serif;  }
+.btn { padding: 10px 40px 14px 40px; font-size: 0.85rem; border-radius: 100px; position: relative; overflow: hidden; transform: perspective(1px); border: none; }
 .btn-sm, .btn-group-sm > .btn { padding: 9px 35px 10px 35px; font-size: 0.875rem; }
 
-.btn-primary{background-color: hsl(243 49% 37%); border-color: hsl(243 49% 37%)}
-.btn-primary:hover{background-color: hsl(243 49% 30%); border-color: hsl(243 49% 30%)}
-.btn-primary:focus, .btn-primary.focus{background-color: hsl(243 49% 30%); border-color: hsl(243 49% 47%)}
-.btn-primary:active, .btn-primary.active{background-color: hsl(243 49% 30%); border-color: hsl(243 49% 47%)}
+.btn-primary{ background-color: hsl(243 49% 37%);  }
+.btn-primary:hover{background-color: hsl(243 49% 37%);  }
+.btn-primary:focus, .btn-primary.focus{ background-color: hsl(243 49% 30%); box-shadow: 0 0 0 0.2rem hsl(243 49% 40%)}
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus { background-color: hsl(243 49% 30%); box-shadow: 0 0 0 0.2rem hsl(243 49% 40%) }
+
+.btn-primary::before, .btn-success::before {
+    content: "";
+    position: absolute;
+    background: hsl(243 49% 25%);
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.btn-success::before { background: hsl(148 100% 30%) }
+
+.btn-primary:hover::before, .btn-success:hover::before { transform: translateX(0); }
+
+.btn-success{ background-color: hsl(148 100% 36%); }
+.btn-success:hover{ background-color: hsl(148 100% 36%); }
+.btn-success:focus, .btn-success.focus{ background-color: hsl(148 100% 29%); box-shadow: 0 0 0 0.2rem hsl(148 100% 32%); }
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.btn-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-success.dropdown-toggle:focus { background-color: hsl(148 100% 29%);; box-shadow: 0 0 0 0.2rem hsl(148 100% 32%); }
 
 a.btn[href^="mailto:"] { color: #fff }
 
@@ -52,39 +134,18 @@ a.btn[href^="mailto:"] { color: #fff }
 /* =ANIMATION
 */
 
-.animated { animation-duration: 1s; animation-fill-mode: both; }
-.fadeIn { animation-name: fadeIn; }
+.animated { animation-duration: 1400ms; animation-fill-mode: both; }
 .fadeInUp { animation-name: fadeInUp; }
 .fadeInRight { animation-name: fadeInRight; }
 
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
     @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-      }
-
-      to {
-        opacity: 1;
-        transform: none;
-      }
+      from { opacity: 0; transform: translate3d(0, 100%, 0);  }
+      to { opacity: 1; transform: none; }
     }
 
     @keyframes fadeInRight {
-      from {
-        opacity: 0;
-        transform: translate3d(100%, 0, 0);
-      }
-
-      to {
-        opacity: 1;
-        transform: none;
-      }
+      from { opacity: 0; transform: translate3d(100%, 0, 0); }
+      to { opacity: 1; transform: none; }
     }
 
 
@@ -128,11 +189,10 @@ a.btn[href^="mailto:"] { color: #fff }
 
 .bg-gradient { background: linear-gradient(145deg, #290190 0%,#8ce7ff 100%) } /* usado nos banner */
 .bg-blue { background-color: #443eb3 }
-.bg-nav-overlay { background: rgba(0,0,0,0.1) }
-
+.bg-nav-overlay { background: rgba(41,1,144,0.4) }
 
 .padding-banner { padding-top: 100px; } /* usado nos banners para dar espaçamento */
-.padding-content { padding-top: 125px; padding-bottom: 125px; } /* usado para dar espaco ao conteudo */
+.padding-content { padding-top: 188px; padding-bottom: 188px; } /* usado para dar espaco ao conteudo */
 
     @media (max-width:991px){
         .padding-banner { padding-top: 80px; padding-bottom: 30px }
@@ -143,13 +203,18 @@ a.btn[href^="mailto:"] { color: #fff }
     }
 
 .space { margin-top: 125px } /* cria espaco entre itens */
+.double-space { margin-top: 188px } /* cria espaco entre itens */
+
+    @media(max-width:767px) {
+        .double-space { margin-top: 125px } /* cria espaco entre itens */
+    }
 
 .relative { position: relative }
 .absolute { position: absolute }
 
 /* svg usados para decoracao das bordas das secoes contato e footer */
-.svg-top { top: -2px; left: 0; width: 100% }
-.svg-bottom { bottom: -7px; left: 0; width: 100% }
+.svg-top { top: -1px; left: 0; width: 100% }
+.svg-bottom { bottom: -1px; left: 0px; width: 100%; }
 
 .back-top {
     font-size: 2em;
@@ -157,8 +222,8 @@ a.btn[href^="mailto:"] { color: #fff }
     bottom:0;
     right:0;
     padding:16px 25px 0px 27px;
-    background:#ddd;
-    color:#838383;
+    background:hsl(243 49% 37%);
+    color:#fff;
     border-top-left-radius:4px;
     transition: ease 0.2s
 }
@@ -190,13 +255,11 @@ h6 { font-size: 1.3em; font-weight: 400;}
 
     }
 
-
-p { margin-top: 0; margin-bottom: 1.6em; font-size: 1.3em; line-height: 1.4em; font-weight: 400; color: #41484C }
-p:last-child { margin-bottom: 0 }
+p { margin-top: 0; font-size: 1.3em; line-height: 1.4em; font-weight: 400; color: #41484C }
 
 a { transition: all ease 0.15s }
 
-a[href^="tel:"], a[href^="mailto:"] { color: #ddd }
+a[href^="tel:"], a[href^="mailto:"] { color: #fff }
 a[href^="tel:"]:hover, a[href^="mailto:"]:hover { color: #fff; text-decoration: none; }
 
 
@@ -206,9 +269,11 @@ a[href^="tel:"]:hover, a[href^="mailto:"]:hover { color: #fff; text-decoration: 
 footer { padding:70px 0; background: #888 }
 
 footer h4 { color: #fff }
-footer p{ font-size: 0.85em; color: #ddd }
+footer p { font-size: 0.85em; color: #fff }
 footer ul { padding: 0; list-style: none }
-footer a { color: #ddd;  padding-right:10px; font-size: 0.85em }
-footer a:hover { color: #fff; text-decoration: none; }
+footer a { color: #fff;  padding-right:10px; font-size: 0.85em }
+footer a:hover { color: #ddd; text-decoration: none; }
 
-.footer-bottom {clear:both; margin:0; padding:8px 0 0 0; height:38px; background:#777; font-size:0.85em; color:#eee}
+.footer-bottom {clear:both; margin:0; padding:8px 0 0 0; height:38px; background:#777; font-size:0.85em; color:#fff}
+.footer-bottom a {color:#fff}
+.footer-bottom a:hover {color:#eee}
